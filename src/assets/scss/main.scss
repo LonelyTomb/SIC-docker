@@ -1,0 +1,35 @@
+@import "~uikit/src/scss/variables-theme.scss";
+@import "~uikit/src/scss/mixins-theme.scss";
+@import "~uikit/src/scss/uikit-theme.scss";
+
+.main-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: {
+    color: #f0f0f0;
+  }
+;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.source-wrapper {
+  display: flex;
+  flex-direction: column;
+  & > .uk-card-body {
+    flex: 1 0 auto;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+//footer > div{
+//  padding:{
+//    top:
+//  }
+//}
