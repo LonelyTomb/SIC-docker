@@ -1,4 +1,5 @@
-node('docker') {
+node {
+	def app
 	stage('CLone Repository'){
 		checkout scm
 	}
