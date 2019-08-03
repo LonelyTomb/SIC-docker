@@ -1,12 +1,12 @@
 FROM node:lts-alpine
 
-RUN npm install -g http-server
+RUN yarn globa add http-server
 
 WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN yarn
 
 COPY . .
 
