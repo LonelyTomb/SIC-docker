@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 
-RUN yarn globa add http-server
+RUN yarn global add http-server
 
 WORKDIR /app
 
@@ -12,6 +12,6 @@ COPY . .
 
 EXPOSE 8080
 
-RUN npm run build
+RUN yarn build
 
 CMD ["http-server", "dist"]
